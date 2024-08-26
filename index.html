@@ -76,13 +76,22 @@
     <!-- Footer Section Start -->
     <footer>
         <div class="text-center fixed inset-x-0 bottom-0 p-4">
-            <h3 class="font-poppins text-xs font-light text-gray-900 dark:text-white">&copy 2023 Copyright by Riza Nur Maulana</h3>
+          <h3
+            class="font-poppins text-xs font-light text-gray-900 dark:text-white"
+          >
+            &copy <span id="year"></span> Copyright by Riza Nur Maulana
+          </h3>
         </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Background ehehe :v -->
-    <div class="circle1 fixed -top-5 -left-28"></div>
-    <div class="circle2 fixed -bottom-14 -right-56"></div>
+      </footer>
+      <!-- Footer Section End -->
+  
+      <!-- Background ehehe :v -->
+      <div class="circle1 fixed -top-5 -left-28"></div>
+      <div class="circle2 fixed -bottom-14 -right-56"></div>
+    </body>
+  
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
